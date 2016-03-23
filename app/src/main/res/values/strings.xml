@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dex65536</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello">Hello, this is the string from android library project, just to check if the R.java works.</string>
+    <string name="hint">This apk contains more than 65536 methods. Normally the dalvik compiler will fail, but the custom_rules.xml can separate them into two .dex file and make it runnable.</string>
+
+</resources>
