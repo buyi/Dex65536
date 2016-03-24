@@ -3,6 +3,7 @@
 buildscript {
     repositories {
         jcenter()
+//        flatDir name:"libs",dirs:"splitlibs/build/libs"
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.0.0-alpha3'

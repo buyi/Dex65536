@@ -27,5 +27,5 @@ dependencies {
     compile 'com.android.support:design:23.2.1'
 }
 
-apply plugin: com.buyi.PluginImpl
+apply plugin: PluginImpl
 //apply plugin: cn.jiajixin.nuwa.NuwaPlugin
