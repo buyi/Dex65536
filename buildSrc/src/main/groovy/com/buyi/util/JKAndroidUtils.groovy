@@ -42,7 +42,11 @@ class JKAndroidUtils {
                 }
 
                 project.exec {
-                    commandLine "/usr/bin/java", "-jar", "dex-method-counts.jar", "${patchFileName}"
+                    commandLine "/bin/pwd"
+
+                }
+                project.exec {
+                    commandLine "/usr/bin/java", "-jar", "../dex-method-counts.jar", "${patchFileName}"
 
                 }
 
@@ -55,6 +59,30 @@ class JKAndroidUtils {
                 throw new InvalidUserDataException('$ANDROID_HOME is not defined')
             }
         }
+    }
+
+    public static void cdAndls (Project project, String dir) {
+        println ("cdAndls dir:${dir}")
+
+        project.exec {
+            commandLine "/usr/bin/cd", "${dir}"
+
+        }
+
+        project.exec {
+            commandLine "/bin/ls", "-al"
+
+        }
+
+        project.exec {
+            commandLine "/bin/pwd"
+
+        }
+
+//        project.exec {
+//            commandLine "/usr/bin/cd", "-"
+//
+//        }
     }
 
 

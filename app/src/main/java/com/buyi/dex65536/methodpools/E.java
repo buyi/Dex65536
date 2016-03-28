@@ -1,5 +1,5 @@
 package com.buyi.dex65536.methodpools;
-public class E {
+public class E {/*
   public int method_0() {return 0;}
   public int method_1() {return 0;}
   public int method_2() {return 0;}
@@ -10000,4 +10000,4 @@ public class E {
   public int method_9997() {return 0;}
   public int method_9998() {return 0;}
   public int method_9999() {return 0;}
-}
+*/}

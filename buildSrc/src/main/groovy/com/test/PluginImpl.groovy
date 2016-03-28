@@ -1,3 +1,4 @@
+package com.test
 
 import org.gradle.api.Project
 import org.gradle.api.Plugin
@@ -13,7 +14,7 @@ public class PluginImpl implements Plugin<Project> {
 //        if (isApp) {
         println("extensions:" + project.extensions)
             def android = project.extensions.getByType(AppExtension)
-            def transform = new TransformImpl(project)
+            def transform = new com.buyi.TransformImpl(project)
         println("transform:" + transform)
             android.registerTransform(transform)
 

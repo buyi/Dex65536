@@ -3,13 +3,10 @@ package com.buyi.dex65536;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import java.lang.reflect.Method;
@@ -23,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         new Thread() {
             @Override
@@ -40,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
                         com.buyi.dex65536.methodpools.B.class,
                         com.buyi.dex65536.methodpools.C.class,
                         com.buyi.dex65536.methodpools.D.class,
-                        com.buyi.dex65536.methodpools.E.class,
-                        com.buyi.dex65536.methodpools.F.class,
+//                        com.buyi.dex65536.methodpools.E.class,
+//                        com.buyi.dex65536.methodpools.F.class,
                         com.buyi.dex65536.methodpools.A.class };
 
                 for (Class<?> c : cs) {
